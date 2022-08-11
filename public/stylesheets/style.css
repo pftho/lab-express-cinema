@@ -4,5 +4,79 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+/* HOME */
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.welcome-page h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: end;
+  width: 60%;
+}
+
+.welcome-page a {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
+/* MOVIES & MOVIE PAGE */
+
+.movie-detail-page {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.movie-detail-page div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movie-detail-page img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.movies-page h1,
+.movie-detail-page h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movies-page p {
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 20%;
+}
+
+.movies h2,
+.movie-detail-page h3 {
+  font-weight: bold;
 }
