@@ -92,4 +92,10 @@ importedMovieSchema
     console.log("created movies", insertedMovies);
     mongoose.disconnect();
   })
+  .then(() => {
+    mongoose.connection.close(() => {
+      console.log(`Mongo connection disconnected`);
+      process.exit(0);
+    });
+  })
   .catch((err) => console.log(err));
